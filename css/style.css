@@ -23,7 +23,7 @@ p {
   margin-top: 15px;
   color: var(--muted);
 
-}
+} 
 
 .folder {
   max-width: 900px;
@@ -237,4 +237,40 @@ button:hover {
   margin-top: 10px;
   font-size: 12px;
   opacity: 0.7;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 16px;
+}
+
+.folders {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.folder {
+  flex: 1 1 250px;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .folders {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+}
+
+button {
+  padding: 14px 18px;
+  font-size: 1rem;
+  border-radius: 8px;
 }
