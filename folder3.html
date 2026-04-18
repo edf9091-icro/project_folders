@@ -1,43 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1 - Introdução a programação</title>
-    <link ref="stylesheet" href="../css/style.css">
-
+  <meta charset="UTF-8">
+  <title>Folder 3 - Front-end na Prática</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
-    <div class="folder">
-        <h1>introduçao á programação</h1>
+  <h1>Front-end na prática</h1>
 
-        <p>
-            Programação é o processo de criar instruções que dizem ao computador oque ele deve fazer.
-            Essas instruções são escritas em linguagens de programação.
-        </p>
+  <p class="intro">
+    Neste folder você vai entender como HTML, CSS e JavaScript trabalham juntos
+    para criar algo simples, mas real: um botão funcional.
+    Cada parte tem uma responsabilidade diferente.
+  </p>
 
-        <h2>Onde a programação é aplicada</h2>
+  <!-- HTML -->
+  <section class="bloco">
+    <h2>HTML Estrutura</h2>
+    <p>
+      O HTML é responsável por criar os elementos que aparecem na tela.
+      Aqui ele cria o botão e o espaço onde o texto será exibido.
+    </p>
 
-        <ul>
-            <li>aplicativos</li>
-            <li>sites</li>
-            <li>jogos</li>
-            <li>sistemas de controle</li>
-        </ul>
+    <pre><code>
+&lt;button id="btnMensagem"&gt;Clique aqui&lt;/button&gt;
+&lt;p id="mensagem"&gt;&lt;/p&gt;
+    </code></pre>
+  </section>
 
-        <hr> 
+  <!-- CSS -->
+  <section class="bloco">
+    <h2>CSS Visual</h2>
+    <p>
+      O CSS define como o botão e o texto vão aparecer.
+      Cores, tamanhos, bordas e efeitos visuais são controlados aqui.
+    </p>
 
-        <h3> Acesse esta pagina pelo QR code </h3>
+    <pre><code>
+button {
+  background: purple;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
 
-        <img
+#mensagem {
+  margin-top: 10px;
+  color: cyan;
+}
+    </code></pre>
+  </section>
 
-        src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://edf9091-icro.github.io/project_folders/folder3.html"
-            alt="QR code do folder3">
+  <!-- JavaScript -->
+  <section class="bloco">
+    <h2>JavaScript Ação</h2>
+    <p>
+      O JavaScript conecta o comportamento ao botão.
+      Ele detecta o clique e altera o conteúdo da página.
+    </p>
 
+    <pre><code>
+const botao = document.getElementById("btnMensagem");
+const texto = document.getElementById("mensagem");
 
-        <a href="./index.html"> - voltar ao inicio</a>
-    </div>
-    
+botao.addEventListener("click", () => {
+  texto.textContent = "Você acabou de usar JavaScript!";
+});
+    </code></pre>
+  </section>
+
+  <!-- Resultado -->
+  <section class="exemplo">
+    <h2>Resultado final</h2>
+    <p>
+      Abaixo está o botão funcionando de verdade.
+      Ele usa o mesmo código explicado acima.
+    </p>
+
+    <button id="btnMensagem">Clique aqui</button>
+    <p id="mensagem"></p>
+  </section>
+
+  <script>
+    const botao = document.getElementById("btnMensagem");
+    const texto = document.getElementById("mensagem");
+
+    botao.addEventListener("click", () => {
+      texto.textContent = "Você acabou de usar JavaScript!";
+    });
+  </script>
+
+</body>
+</html>
+<p> <a href="folder2.html">  voltar - folder 2 </a></p>
+        
+        
+        <p> <a href="folder4.html "> avançar - folder 4 </a>
+
+        <p><a href="./index.html"> - voltar ao inicio</a></p>
 </body>
 </html>

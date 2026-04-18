@@ -4,39 +4,140 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1 - Introdução a programação</title>
-    <link ref="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../3- estrutura html/css/style.css">
 
 </head>
 <body>
 
-    <div class="folder">
-        <h1>introduçao á programação</h1>
+      <div class="folder">
+       <h1>Primeiras linguagens de programação</h1>
 
-        <p>
-            Programação é o processo de criar instruções que dizem ao computador oque ele deve fazer.
-            Essas instruções são escritas em linguagens de programação.
+       <p class="intro">
+        Aqui voce é apresentado as primeiras linguagens e a mais utilizadas 
+        por programadores que estao iniciando neste novo mundo.
+        O intuito principal é apresentar e explicar de maneira breve o que
+        cada linguagem representa e como elas se conectam entre si.
+        Antes de aprender qualquer linguagem, você precisa aprender a pensar.
+       
+    
+       </p>
+
+       <section class="linguagem">
+        <h2> Logica de programação</h2>
+        <p> Lógica de programação é como ensinar o computador
+        a entender decisões "se isso acontecer, faça aquilo". Não é
+        código ainda, é raciocinio.</p>
+       </section>
+
+       <section class="linguagem">
+        <h2>HTML</h2>
+        <p>HTML é a base e o esquelo de qualquer site. Tudo que forma
+            um site: Títulos, Texto, Imagens, Links.
+            sem HTML não existe site, ele é o ponto inicial de todo site.
         </p>
 
-        <h2>Onde a programação é aplicada</h2>
+        <h3>Exemplo:</h3>
+        <pre><code>
+            &lt;h1&gt;Olá, mundo!&lt;/h1&gt;
+            &lt;p&gt;muito obrigado por visitar meu site.&lt;/p&gt;
+            &lt;a ref="#">clique aqui&lt;/a&gt;
+        </code></pre>
+       </section>
 
-        <ul>
-            <li>aplicativos</li>
-            <li>sites</li>
-            <li>jogos</li>
-            <li>sistemas de controle</li>
-        </ul>
+       <section class="linguagem">
+        <h2>CSS</h2>
+        <p>O CSS por outro lado é totalmente responsavel pela aparencia. Cores,
+             Fontes, Tamanhos, Animações e organização visual. E ele que torna um site simples
+             em algo visualmente bonito.
+        </p>
+        <h3>Exemplo:</h3>
+        <pre><code>
+            body {
+                background: black;
+                color: cyan;
+            }
+            h1 {
+                color: violet
+            }
+        </code></pre>
+       </section>
 
-        <hr> 
+        <section class="linguagem">
+        <h2>Python</h2>
+        <p>Python é conhecida por ser uma linguagem
+            de fácil entendimento e leitura, mas é usada em áreas
+            avançadas como inteligência artificial,
+            automação e ciência de dados.
+        </p>
 
-        <h3> Acesse esta pagina pelo QR code </h3>
+        <h3>Exemplo:</h3>
+        <pre><code>
+            print("salve salve, mundo");
+        </code></pre>
+       </section>
 
-        <img
 
-        src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://edf9091-icro.github.io/project_folders/folder2.html"
-            alt="QR code do folder2">
+       <section class="linguagem">
+        <h2>JavaScript</h2>
+        <p>JavaScript é oque faz a pagina reagir. É o que traz "vida" ao site
+            Botões funcionais, Formulários, Animações e 
+            todas as interações do site sao responsabilidade do JavaScript. 
+        </p>
+
+        <h3>Exemplo:</h3>
+        <pre><code>
+            alert("Bem vindo ao site");
+        </code></pre>
+       </section>
+
+       <section class="linguagem avancada">
+        <h2>C++</h2>
+        <p>C++ é usada na estruturação e codificação de jogos, sistemas, 
+            motores graficos e softwares pesados. É uma linguagem mais avançada
+            que exige maior conhecimento sobre logica de programação e 
+            controle maior sobre os comandos do computador.
+        </p>
+
+        <h3>Exemplo:</h3>
+        <pre><code>
+          #include <ionstream>
+            using name space std;
+
+            int main () {
+                count << "Ola, mundo!";
+                return 0;
+            }
+        </code></pre>
+       </section>
+
+       <section class="linguagem avancada">
+        <h2>C#</h2>
+        <p>C# é muito usada na criação de jogos (unity),
+            softwares Windows e aplicações corporativas.
+            Ela é semlhante ao java, mas é integrada ao ecossistema Windows.
+        </p>
+
+        <h3>Exemplo:</h3>
+        <pre><code>
+         using system;
+         
+         class program {
+            static void main() {
+                console.writeline("Oi, mundo");
+              }
+          }
+        </code></pre>
+       </section>
 
 
-        <a href="./index.html"> - voltar ao inicio</a>
+
+       
+        <p> <a href="folder1.html">  voltar - folder 1 </a></p>
+        
+        
+        <p> <a href="folder3.html"> avançar - folder 3 </a>
+
+        <p><a href="./index.html"> - voltar ao inicio</a></p>
     </div>
     
 </body>
